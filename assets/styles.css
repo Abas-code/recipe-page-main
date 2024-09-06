@@ -1,0 +1,99 @@
+/* variables */
+:root {
+	--brown-800: #854632;
+
+	--white: #ffffff;
+
+	--rose-50: #fff5fa;
+	--rose-800: #7b284f;
+
+	--stone-100: #f3e6d8;
+	--stone-150: #e4ded8;
+	--stone-600: #5f574e;
+	--stone-900: #302d2c;
+}
+
+/* fonts */
+@font-face { font-family: 'YoungSerif'; src: url('fonts/YoungSerif-Regular.ttf'); }
+@font-face { font-family: 'Outfit-400'; src: url('fonts/Outfit-Regular.ttf'); }
+
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: var(--stone-600);
+	font-family: 'Outfit-400';
+	font-size: 16px;
+}
+
+/* hide styles */
+@media screen and (min-width: 1px) { body { display: none; } }
+
+/* basic/mobile styles */
+@media screen and (min-width: 320px) {
+	body { display: block; width: 100%; height: auto; background: var(--stone-150); }
+	main { width: 100%; height: auto; background: var(--white); }
+	img { width: 100%; height: auto; }
+	article { width: 100%; height: auto; padding: 30px; }
+	.introduction { margin-bottom: 25px; width: 100%; height: auto; }
+	h1 {
+		margin-bottom: 20px;
+		font-family: 'YoungSerif';
+		font-size: 30px;
+		font-weight: normal;
+		line-height: 1.0;
+		color: var(--stone-900);
+	}
+	p { margin-bottom: 20px; line-height: 1.5; }
+	.preparation { background: var(--rose-50); border-radius: 10px; padding: 20px; }
+	h3 { font-size: 18px; color: var(--rose-800); }
+	.preparation ul, .ingredients ul, .instructions ol { padding-left: 20px; }
+	.preparation li, .ingredients li, .instructions li { margin-top: 10px; line-height: 1.5; }
+	.ingredients, .instructions { margin-bottom: 25px; width: 100%; height: auto; }
+	h2 {
+		margin-bottom: 20px;
+		font-family: 'YoungSerif';
+		font-size: 25px;
+		font-weight: normal;
+		color: var(--brown-800);
+	}
+	hr { margin-bottom: 20px; }
+	.nutrition { width: 100%; height: auto; }
+	.table { display: grid; grid-template-columns: auto auto; }
+	.item {
+	  border-bottom: 1px solid var(--stone-150);
+	  padding: 10px 30px;
+	  text-align: left;
+	}
+	.brown { color: brown; font-weight: bold; }
+	.none { border: none; }
+	footer { text-align: center; padding: 5px 0; }
+	footer, footer a { font-size: 11px; }
+	footer a { color: var(--brown-800); font-weight: bold; }
+}
+
+/* tablet styles */
+@media screen and (min-width: 501px) {
+	* { font-size: 18px; }
+	h3 { font-size: 20px; }
+	footer, footer a { font-size: 16px; }
+}
+
+/* laptop/desktop styles */
+@media screen and (min-width: 769px) {
+	main {
+		margin: 100px auto;
+		width: 750px;
+		height: auto;
+		border-radius: 20px;
+		padding: 40px;
+	}
+	img { border-radius: 10px; }
+	article { padding: 30px 0 0; }
+	h1 { font-size: 40px; }
+	.preparation { padding: 30px; }
+	.preparation ul, .ingredients ul, .instructions ol { padding-left: 30px; }
+	h2 { font-size: 30px; }
+}
