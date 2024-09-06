@@ -21,13 +21,13 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
-![mobile view](./recipe-page-mobile-result.jpg)
-![desktop view](./recipe-page-desktop-result.jpg)
+![mobile view](./design/mobile-design-1.jpg)
+![desktop view](./design/desktop-design-1.jpg)
 
 ### Links
 
-- Solution URL: (https://your-solution-url.com)
-- Live Site URL: (https://your-live-site-url.com)
+- Solution URL: (https://github.com/Abas-code/recipe-page-main)
+- Live Site URL: (https://recipe-page-main-mauve-three.vercel.app/)
 
 ## My process
 
